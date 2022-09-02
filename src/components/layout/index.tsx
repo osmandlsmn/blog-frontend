@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 
 import Header from "../Header";
 import Subscribe from "../Subscribe";
+import Footer from "../Footer";
 
 const Layout: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Layout: React.FC = () => {
       <main>
         <Outlet />
         <Subscribe />
+        <Footer />
       </main>
     </>
   );
