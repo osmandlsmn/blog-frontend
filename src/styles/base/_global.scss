@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #eff0f3;
+}
+
+.container {
+  max-width: $xl;
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  @include mq(min, sm) {
+    max-width: $col-sm;
+  }
+
+  @include mq(min, md) {
+    max-width: $col-md;
+  }
+
+  @include mq(min, lg) {
+    max-width: $col-lg;
+  }
+
+  @include mq(min, xl) {
+    max-width: $col-xl;
+  }
+}
+
+.scroll-icon {
+  margin-top: 35px;
+  text-align: center;
+
+  @include mq(max, md) {
+    margin-top: 20px;
+  }
+}

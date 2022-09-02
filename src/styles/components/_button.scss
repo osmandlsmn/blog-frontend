@@ -1,0 +1,11 @@
+.btn {
+  padding: 14px 32px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+
+  &-primary {
+    background: $primary_color;
+  }
+}

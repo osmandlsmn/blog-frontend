@@ -1,0 +1,116 @@
+.hero-section {
+  padding-top: 80px;
+  min-height: 450px;
+}
+
+.hero-section .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .hero-content {
+  max-width: 70%;
+}
+
+.hero-section .hero-content h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #2b2c34;
+  max-width: 50%;
+}
+
+.hero-section .hero-content p {
+  margin-top: 20px;
+  font-size: 14px;
+  max-width: 65%;
+  border-left: 3px solid black;
+  padding-left: 7px;
+  color: #9a9494;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.subscribe-form {
+  width: 65%;
+}
+
+.scroll-icon {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.category-section {
+  margin-top: 20px;
+  min-height: 300px;
+  background-color: #eff0f3;
+}
+
+.category-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-section-title {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.category-section-content {
+  margin-top: 30px;
+}
+
+.category-card {
+  box-sizing: border-box;
+  height: 200px !important;
+  background: #fffffe;
+  border-radius: 6px;
+  box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 50px 25px;
+  cursor: pointer;
+}
+
+.swiper-slide.category-card.focus {
+  background: #6246ea !important;
+}
+
+.swiper-slide.category-card.focus .category-title {
+  color: white !important;
+}
+
+.swiper-slide.category-card .category-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.category-card.focus .category-icon {
+  background-color: white;
+}
+
+.category-card .category-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #2b2c34;
+  margin-top: 15px;
+}
+
+.category-card .category-icon img {
+  width: 33px;
+}

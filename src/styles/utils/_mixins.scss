@@ -1,0 +1,13 @@
+@mixin mq($range, $breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if $range == "max" {
+      @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    } @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+  }
+}

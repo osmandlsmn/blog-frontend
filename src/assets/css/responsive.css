@@ -1,0 +1,117 @@
+@media only screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    z-index: 100;
+  }
+  .nav-menu-area {
+    top: 65px;
+    flex-direction: column !important;
+    position: fixed;
+    width: 100% !important;
+    left: -100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color: #eff0f3;
+  }
+  .nav-menu {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .menu-button {
+    display: block !important;
+  }
+  .navbar .open {
+    left: 0 !important;
+  }
+  .nav-menu .nav-item {
+    margin: 0 !important;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu-area button {
+    margin-bottom: 100px;
+    width: 90%;
+  }
+  .hero-section {
+    padding-top: 120px !important;
+    min-height: 350px !important;
+  }
+  .hero-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section .hero-content {
+    max-width: 90% !important;
+  }
+  .hero-section .hero-title {
+    flex-direction: column;
+    line-height: normal;
+    max-width: none !important;
+  }
+  .hero-section .hero-content p {
+    max-width: none !important;
+    border: 0 !important;
+  }
+
+  .hero-section .hero-image {
+    display: none;
+  }
+
+  .subscribe-form {
+    width: 100% !important;
+  }
+  .category-card {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-section {
+    padding-top: 100px !important;
+    min-height: 350px !important;
+  }
+  .scroll-icon {
+    margin-top: 19px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe-form .form-group {
+    margin-bottom: 10px;
+  }
+  .hero-content h1 {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}

@@ -1,0 +1,150 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.hero-section {
+  padding-top: 80px;
+  min-height: 450px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    max-width: 70%;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: #2b2c34;
+    max-width: 60%;
+  }
+
+  .hero-description {
+    margin-top: 20px;
+    font-size: 14px;
+    max-width: 65%;
+    border-left: 3px solid black;
+    padding-left: 7px;
+    color: #9a9494;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  @include mq(max, md) {
+    padding-top: 120px !important;
+    min-height: 350px !important;
+
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 90% !important;
+    }
+
+    .hero-title {
+      flex-direction: column;
+      line-height: normal;
+      max-width: none !important;
+    }
+
+    .hero-description {
+      max-width: none !important;
+      border: 0 !important;
+    }
+
+    .hero-image img {
+      display: none;
+    }
+  }
+
+  @include mq(max, sm) {
+    padding-top: 100px !important;
+    min-height: 350px !important;
+
+    .hero-title {
+      font-size: 30px !important;
+      line-height: 30px !important;
+    }
+
+    .hero-description {
+      margin-top: 10px;
+    }
+  }
+}
+
+.category-card {
+  height: 200px !important;
+  background: #fffffe;
+  border-radius: 6px;
+  box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 50px 25px;
+  cursor: pointer;
+
+  .category-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: $text_black;
+    margin-top: 15px;
+  }
+
+  .category-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+
+    img {
+      width: 33px;
+    }
+  }
+
+  &.focus {
+    background: $primary_color !important;
+
+    .category-icon {
+      background-color: white;
+    }
+
+    .category-title {
+      color: white !important;
+    }
+  }
+
+  @include mq(max, md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.blog-section {
+  background-color: #fffffe !important;
+
+  .section-title {
+    font-size: 17px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

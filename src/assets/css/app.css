@@ -1,0 +1,75 @@
+@import "reset.css";
+@import url("./_variables.css");
+@import url("./responsive.css");
+@import url("./_utilities.css");
+@import url("./_grid.css");
+@import url("./_section.css");
+@import url("./_form.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #eff0f3;
+}
+
+.header {
+  width: 100%;
+  background-color: #eff0f3;
+  height: 70px;
+  -moz-box-shadow: 0 4px 4px rgba(215, 215, 215, 0.2);
+  -webkit-box-shadow: 0 4px 4px rgba(215, 215, 215, 0.2);
+  box-shadow: 0 4px 4px rgba(215, 215, 215, 0.2);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+  height: 30px;
+}
+
+.nav-menu-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+}
+
+.nav-menu .nav-item {
+  margin-right: 25px;
+}
+
+.nav-menu .nav-item a {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.6;
+}
