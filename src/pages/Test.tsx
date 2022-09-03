@@ -1,18 +1,11 @@
-import * as React from "react";
-import { useLoadingContext } from "react-router-loading";
+import { FC } from "react";
 
-const Home: React.FC = () => {
-  const loadingContext = useLoadingContext();
-  React.useEffect(() => {
-    setTimeout(() => {
-      loadingContext.done();
-    }, 3000);
-  }, []);
+const Test: FC = () => {
   return (
-    <>
-      <p>hello world</p>
-    </>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magni.</p>
+    </div>
   );
 };
 
-export default Home;
+export default Test;

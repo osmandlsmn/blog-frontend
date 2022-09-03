@@ -5,7 +5,15 @@ import HeroSection from "./components/HeroSection";
 import CategorySection from "./components/CategorySection";
 import BlogSection from "./components/BlogSection";
 
-const Home: React.FC = () => {
+import { useQuery } from "@tanstack/react-query";
+import { getBlog, getBlogs } from "../../api/blog";
+
+const Home: React.FC = ({}) => {
+  // const { isLoading, error, data } = useQuery(["blogs"], getBlogs);
+  const { isLoading, error, data } = useQuery(["blogs"], () => getBlog("asd"));
+
+  console.log(error);
+
   return (
     <>
       <HeroSection />

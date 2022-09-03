@@ -5,7 +5,6 @@ import { FiSearch, FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import Logo from "../../assets/images/logo.png";
-import buymeacoffe from "../../assets/images/buymeacoffe.svg";
 import IconButton from "../IconButton";
 
 const Header: React.FC = () => {
